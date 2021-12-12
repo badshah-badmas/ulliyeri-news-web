@@ -1,0 +1,124 @@
+@font-face {
+    font-family: malayalamFontRegular;
+    src: url(NotoSansMalayalam_Condensed-Regular.ttf);
+     }
+@font-face{ font-family: malayalamFontLight;
+    src: url(NotoSansMalayalam_Condensed-Light.ttf);
+    }
+@font-face{
+    font-family: malayalamFontSemiBold;
+    src: url(NotoSansMalayalam_Condensed-SemiBold.ttf);
+    }
+
+body  {
+    font-family: 'Segoe UI', Arial, sans-serif ;
+    color: #444;
+    
+}
+
+.topBar{
+background-color: #F1F3F6;
+font-family: "Segoe UI Light", Arial, sans-serif;
+height: 46px;
+padding-top: 14px;
+
+}
+.top-txt-left{
+    font-size: 12px;
+}
+.top-txt-rigt{
+    font-size: 12px;
+    text-align: right;
+}
+.logo-home{
+    margin: 14px;
+}
+.navBar{
+    background-color: #26365F;
+    height: 28px;
+}
+.navBarItem{
+    margin-left: 21px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #F1F3F6;
+    font-size: 12px;
+}
+.navBarItem:hover{
+    color: #ffff;
+}
+.line{
+    height: 2px;
+    background-color: #26365F;
+    width: 100%;
+}
+.main-container{
+    margin-top: 12px;
+    
+}
+.news-container{
+    margin-top: 10px;
+    
+}
+.main-card{
+    font-family: malayalamFontSemibold;
+    background-color: #F1F3F6;
+}
+.news-card{
+    font-family: malayalamFontSemibold;
+    background-color: #F1F3F6;
+}
+.zoom:hover{
+    
+    zoom: 1%;
+}
+.card-body-2 {
+    flex: 1 1 auto;
+    padding: 0.6rem;
+}
+.scroll-div{
+
+overflow-y: scroll;
+overflow-x: hidden;
+max-height: 480px;
+}
+.div-button{
+    background-color: #26365F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.a-tag-white{
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: #F1F3F6;
+    margin: 5px;
+}
+.a-tag-white:hover{
+    color: rgb(177, 245, 250);
+}
+.banner-add{
+    margin-top: 15px;
+}
+.to-advertise{
+    color: #26365F;
+    float:right;
+    text-decoration: none;
+}
+.a-tag-dark{
+    text-decoration: none;
+    color: #26365F;;
+}
+.footer{
+    padding-top: 15px;
+    height: 35px;
+    font-size: 10px;
+    color: #26365F;
+    background-color: #F1F3F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
