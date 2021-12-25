@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<!-- top bar section -->
+<div class="topBar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h6 class="top-txt-left"> {{date}} | {{day}}</h6>
+            </div>
+            <div class="col-sm-6 ">
+                <h6 class="top-txt-rigt d-none d-sm-block"> WWW.ULLIYERINEWS.COM </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- top bar section end -->
+
+<!-- logo section -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 col-md-1 d-none d-sm-block">
+            <img class="img-responsive logo-home" width="100%"
+                 src="{% static 'static_images\ulliyeri news logo px.png' %}"
+                 alt="">
+        </div>
+    </div>
+</div>
+<!-- logo section end-->
+
+<!-- nav bar section -->
+<div class="container-fluid navBar  d-none d-sm-block ">
+    <div class="container d-none d-lg-block">
+
+        <a class="navBarItem" href="#">HOME</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="#">LOCAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="#">POLITICAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="#">EDUCATIONAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="#">OBITUARY</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="#">FOOD RECIPES</a>
+    </div>
+</div>
+<!-- nav bar section end-->
+
+<!-- news main container -->
+<div class="container main-container">
+    <div>
+        <div class="row">
+            <!-- breaking news container -->
+            <div class="col-md-8">
+                <div>
+                    <h6>
+                        BREAKING NEWS
+                    </h6>
+                    <div class="line"></div>
+                </div>
+                <!-- latest news text and line end -->
+
+
+                <div class="news-container shadow-sm  mb-5 bg-body rounded ">
+                    <!--                    <img class=" card-img-top " width="100%" src="..\assets\images\1920x1080 dummy.png" alt="imagr">-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <!--                        <div class="carousel-indicators">-->
+                        <!--                            {% for i in breakingNewsList %}-->
+                        <!--                            {% ifequal forloop.counter 1 %}-->
+                        <!--                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"-->
+                        <!--                                    class="active" aria-current="true" aria-label="Slide 1"></button>-->
+                        <!--                            {% else %}-->
+                        <!--                            <button type="button" data-bs-target="#carouselExampleIndicators"-->
+                        <!--                                    data-bs-slide-to="{{forloop.counter0}}"-->
+                        <!--                                    aria-label="Slide {{forloop.counter}}"></button>-->
+                        <!--                            {% endifequal %}-->
+                        <!--                            {% endfor %}-->
+                        <!--                        </div>-->
+                        <div class="carousel-inner">
+                            {% for i in breakingNewsList %}
+                            {% ifequal forloop.counter 1 %}
+                            <div class="carousel-item active">
+                                <!---card--->
+                                <div class="news-container shadow-sm   bg-body rounded ">
+                                    <img src="{{i.image.url}}" class="d-block w-100" alt="">
+                                    <div class="card-body main-card ">
+                                        <h5 class="card-text ">{{i.heading}} </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            {% else %}
+                            <div class="carousel-item">
+                                <div class="news-container shadow-sm   bg-body rounded ">
+                                    <img src="{{i.image.url}}" class="d-block w-100" alt="">
+                                    <div class="card-body main-card ">
+                                        <h5 class="card-text ">{{i.heading}} </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {% endifequal %}
+                            {% endfor %}
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--latest news container end-->
+
+            <!-- trending news container -->
+            <div class="col-md-4 d-none d-md-block">
+                <div>
+                    <!------------------------------->
+                    <h6>TRENDING NEWS</h6>
+                    <div class="line"></div>
+                    <div class="scroll-div news-container">
+                        {% for i in trendingNewsList %}
+                        <div class=" mb-3  shadow-sm bg-body rounded">
+                            <div class="row g-0 news-card">
+                                <div class="col-lg-6">
+                                    <img class="img-responsive" width="100%" src="{{i.image.url}}"
+                                         alt="imagr">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card-body-2">
+                                        <p class="card-text"> {{i.heading|truncatechars:56}}</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+
+                    </div>
+                    <p></p>
+                    <!-- join button -->
+                    <div class=" div-button">
+                        <a class="a-tag-white" href="https://chat.Whatsapp.com/DvEDMwQNuWRJj7VV7WzBYn">Click here to
+                            join Ulliyeri News WhatsApp group </a>
+                    </div>
+                    <!-- trending news container end -->
+                </div>
+            </div>
+            <!-- first section end-->
+            <div class="col-12">
+                <h6>LATEST NEWS</h6>
+                <div class="line"></div>
+                <div class=" news-container mb-5">
+
+                    <div class="row">
+                        {% for i in latestNewsList %}
+                        <div class="col-lg-3 mb-3">
+                            <div class="news-card">
+                                <img class="img-responsive" width="100%" src="{{i.image.url}}"
+                                     alt="imagr">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{i.heading|truncatechars:56}}</h5>
+                                    <!--                                    <p class="card-text">This is a longer card with supporting text below as a natural-->
+                                    <!--                                        lead-in to additional content. This content is a little bit longer.</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+                <!--latest news scroll container end-->
+                <h6>ADVERTISMENT</h6>
+                <div class="line"></div>
+                <div class="banner-add col-12">
+
+
+<!--                    <div id="carouselExampleInterval" class="carousel slide img-responsive" data-bs-ride="carousel">-->
+<!--                        <div class="carousel-inner">-->
+<!--                            {% for i in mainBannerAd %}-->
+<!--&lt;!&ndash;                            <img src="{{i.image.url}}">&ndash;&gt;-->
+<!--                            {{i.image.url}}-->
+<!--                            {% ifequal forloop.counter 1 %}-->
+<!--                            <div class="carousel-item active" data-bs-interval="10000">-->
+<!--&lt;!&ndash;                                <img src="..." class="d-block w-100" alt="...">&ndash;&gt;-->
+<!--                                <img class=" d-block" style="margin-bottom:15px ;" width="100%"-->
+<!--                         src="{{i.image.url}}" alt="">-->
+<!--                            </div>-->
+<!--                            {% else %}-->
+<!--                            <div class="carousel-item" data-bs-interval="2000">-->
+<!--&lt;!&ndash;                                <img src="..." class="d-block w-100" alt="...">&ndash;&gt;-->
+<!--                                <img class=" d-block" style="margin-bottom:15px ;" width="100%"-->
+<!--                         src="{{i.image.url}}" alt="">-->
+<!--                            </div>-->
+<!--                            {% endifequal %}-->
+<!--                            {% endfor %}-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                    {% for i in mainBannerAd %}
+                    <img class="img-responsive" style="margin-bottom:15px ;" width="100%"
+                         src="{{i.image.url}}" alt="hggch">
+                    {{i.image.url}}
+                    {% endfor %}
+                    <div class="line"></div>
+                    <a class="to-advertise" href="#">click here to advertise</a>
+                </div>
+                <div style="height: 10px; width: 10px;">
+                    <p></p>
+                </div>
+                {{mainBannerAd.0.image.url}}
+                <img width="100%" height="300px" src="{{mainBannerAd.0.image.url}}">
+                {{mainBannerAd.0.image.url}}
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-16x9" style=" background-color: aqua;">
+                            <iframe src="https://www.youtube.com/results?search_query=Alan+Walker%2C+Sabrina+Carpenter+%26+Farruko+-+On+My+Way+%2F%2F+Lyrics"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------>
+<div style="height: 100px;">
+</div>
+<!------------------------------------------------>
+
+<!-- news main container end -->
+
+<div class="footer">
+    <p>© 2021 <b> ulliyerinews.com </b> ALL RIGHTS RESERVED | Powered by <span><a class="a-tag-dark" href="#"> badmas dev & design</a> </span>
+    </p>
+</div>
+{% endblock %}
+
+
+
+
+

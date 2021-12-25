@@ -1,13 +1,16 @@
+
 @font-face {
-    font-family: malayalamFontRegular;
-    src: url(NotoSansMalayalam_Condensed-Regular.ttf);
+    font-family: 'malayalamFontRegular';
+    src: local('malayalamFontRegular'),
+    url('../fonts/NotoSansMalayalam_Condensed-Regular.ttf') format("truetype");
      }
 @font-face{ font-family: malayalamFontLight;
     src: url(NotoSansMalayalam_Condensed-Light.ttf);
     }
 @font-face{
     font-family: malayalamFontSemiBold;
-    src: url(NotoSansMalayalam_Condensed-SemiBold.ttf);
+    src:
+    url(../../NotoSansMalayalam_Condensed-SemiBold.ttf);
     }
 
 body  {
@@ -121,4 +124,14 @@ max-height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.carousel-indicators{
+    bottom: auto;
+    top: 0;
+
+    margin-top: 1rem;
+    margin-bottom:auto;
+    background-color: #F1F3F6;
 }
