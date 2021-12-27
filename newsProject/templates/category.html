@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<!-- top bar section -->
+<div class="topBar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h6 class="top-txt-left"> {{date}} | {{day}}</h6>
+            </div>
+            <div class="col-sm-6 ">
+                <h6 class="top-txt-right d-none d-sm-block"> WWW.ULLIYERINEWS.COM </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- top bar section end -->
+
+<!-- logo section -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 col-md-1 d-none d-sm-block">
+            <img class="img-responsive logo-home" width="100%"
+                 src="{% static 'static_images\ulliyeri news logo px.png' %}"
+                 alt="">
+        </div>
+    </div>
+</div>
+<!-- logo section end-->
+
+<!-- nav bar section -->
+<div class="container-fluid navBar  d-none d-sm-block ">
+    <div class="container d-none d-lg-block">
+
+        <a class="navBarItem" href="/">HOME</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/local/">LOCAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/political/">POLITICAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/education/">EDUCATIONAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/obituary/">OBITUARY</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/recipe/">FOOD RECIPES</a>
+    </div>
+</div>
+<div class="container main-container">
+    <div>
+        <div class="row">
+            <div class="col-12 ">
+
+                {% for i in mainBannerAd %}
+                <a href="#" class="clickable-div">
+                    <img class="img-responsive banner-ads-image" width="100%"
+                         src="{{i.image.url}}" alt="">
+                </a>
+                {% endfor %}
+
+                <a class="to-advertise" href="#">click here to advertise</a>
+            </div>
+            <div style="height: 10px; width: 10px;">
+                <p></p>
+            </div>
+            <div class="col-12">
+                <h6>{{category}} NEWS</h6>
+                <div class="line"></div>
+                <div class=" news-container mb-5">
+                    <div class="row">
+                        {% for i in newsList %}
+                        {% if forloop.counter < 9 %}
+                        <div class="col-lg-3 mb-3">
+                            <a href="/category/{{category | lower}}/{{i.id}}" class="clickable-div">
+                                <div class="news-card">
+                                    <img class="img-responsive" width="100%" src="{{i.image.url}}"
+                                         alt="imagr">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{i.heading|truncatechars:56}}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <!--latest news scroll container end-->
+                <h6>ADVERTISMENT</h6>
+                <div class="line"></div>
+                <div class="col-12 ">
+                    {% for i in mainBannerAd %}
+                    <a href="#" class="clickable-div">
+                        <img class="img-responsive banner-ads-image" width="100%"
+                             src="{{i.image.url}}" alt="">
+                    </a>
+                    {% endfor %}
+                    <div class="line"></div>
+                    <a class="to-advertise" href="#">click here to advertise</a>
+                </div>
+                <div style="height: 10px; width: 10px;">
+                    <p></p>
+                </div>
+
+                {% if newsList|length > 8 %}
+                <h6>{{category}} NEWS</h6>
+                <div class="line"></div>
+                {% endif %}
+
+                <div class=" news-container mb-5">
+                    <div class="row">
+                        {% for i in newsList %}
+                        {% if forloop.counter > 8 %}
+                        <div class="col-lg-3 mb-3">
+                            <a href="/category/{{category | lower}}/{{i.id}}" class="clickable-div">
+                                <div class="news-card">
+                                    <img class="img-responsive" width="100%" src="{{i.image.url}}"
+                                         alt="imagr">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{i.heading|truncatechars:56}}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:15px">
+                    <div class="col-lg-6">
+                        <h6>WATCH TRENDING NEWS ON YOUTUBE</h6>
+                        <div class="line" style="margin-bottom:15px"></div>
+                        <div class="ratio ratio-16x9">
+                            <iframe width="1520" height="623" src="https://www.youtube.com/embed/1wIqPenB2J8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 fill-container">
+                        <h6>ENTERTAINMENT NEWS</h6>
+                        <div class="line" style="margin-bottom:15px"></div>
+                        <div class="row ">
+                            {% for i in entertainmentNewsList %}
+                            {% if forloop.counter < 3 %}
+                            <div class="col-lg-6">
+                                <a href="category/entertainment/{{i.id}}" class="clickable-div">
+                                    <div class="news-card">
+                                        <img class="img-responsive" width="100%" src="{{i.image.url}}"
+                                             alt="imagr">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{i.heading|truncatechars:50}}</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="d-grid gap-2 fill-remain ">
+                            <button class="darkBtn" type="button">More Entertainment News</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------>
+<div style="height: 100px;">
+</div>
+<!------------------------------------------------>
+
+<!-- news main container end -->
+
+<div class="footer">
+    <p>© 2021 <b> ulliyerinews.com </b> ALL RIGHTS RESERVED | Powered by <span><a class="a-tag-dark" href="#"> badmas dev & design</a> </span>
+    </p>
+</div>
+
+{% endblock %}

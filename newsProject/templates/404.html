@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+
+<div class="topBar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h6 class="top-txt-left"> {{date}} | {{day}}</h6>
+            </div>
+            <div class="col-sm-6 ">
+                <h6 class="top-txt-rigt d-none d-sm-block"> WWW.ULLIYERINEWS.COM </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- top bar section end -->
+
+<!-- logo section -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 col-md-1 d-none d-sm-block">
+            <img class="img-responsive logo-home" width="100%"
+                 src="{% static 'static_images\ulliyeri news logo px.png' %}"
+                 alt="">
+        </div>
+    </div>
+</div>
+<!-- logo section end-->
+
+<!-- nav bar section -->
+<div class="container-fluid navBar  d-none d-sm-block ">
+    <div class="container d-none d-lg-block">
+
+        <a class="navBarItem" href="/">HOME</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/local/">LOCAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/political/">POLITICAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/education/">EDUCATIONAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/obituary/">OBITUARY</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/recipe/">FOOD RECIPES</a>
+    </div>
+</div>
+<div class="container main-container fill-container" >
+    <div>
+        <div class="row">
+            <div class="d-flex justify-content-center align-items-center fill-remain" id="main">
+                <h1 class="mr-3 pr-3 align-top border-right inline-block align-content-center">404</h1>
+                <div class="inline-block align-middle">
+                    <h2 class="font-weight-normal lead" id="desc">The page you requested was not found.</h2>
+                </div>
+            </div>
+            <div class="col-12 ">
+                <h6>ADVERTISMENT</h6>
+                <div class="line"></div>
+                {% for i in mainBannerAd %}
+                <a href="#" class="clickable-div">
+                    <img class="img-responsive banner-ads-image" width="100%"
+                         src="{{i.image.url}}" alt="">
+                </a>
+                {% endfor %}
+                <div class="line"></div>
+                <a class="to-advertise" href="#">click here to advertise</a>
+            </div>
+            <div style="height: 10px; width: 10px;">
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!------------------------------------------------>
+<div style="height: 100px;">
+</div>
+<!------------------------------------------------>
+
+<!-- news main container end -->
+
+<div class="footer">
+    <p>© 2021 <b> ulliyerinews.com </b> ALL RIGHTS RESERVED | Powered by <span><a class="a-tag-dark" href="#"> badmas dev & design</a> </span>
+    </p>
+</div>
+{% endblock %}

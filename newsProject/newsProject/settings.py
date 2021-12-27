@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-se+!i+g!3^hfwdmi36$q^^f0!0m*minly=%pz(+w9=rekc%0#4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -74,10 +74,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'newsProject.wsgi.application'
 
-from easy_thumbnails.conf import Settings as thumbnail_settings
-THUMBNAIL_PROCESSORS = (
-    'image_cropping.thumbnail_processors.crop_corners',
-) + thumbnail_settings.THUMBNAIL_PROCESSORS
 
 
 # Database

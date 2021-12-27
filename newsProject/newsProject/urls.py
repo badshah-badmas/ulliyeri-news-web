@@ -19,11 +19,21 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
-    path('',include('newsApp.urls'))
-]
+    path('',include('newsApp.urls')),
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,
                           document_root = settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL,
                           document_root = settings.MEDIA_ROOT)
+# urlpatterns = patterns('',
+#     '127.0.0.1'
+# ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# urlpatterns = [
+#     # ... the rest of your URLconf goes here ...
+# ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

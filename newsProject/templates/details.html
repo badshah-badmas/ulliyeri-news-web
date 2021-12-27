@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_head %}
+<head>
+    <meta property="og:type" content="article" />
+	<meta property="og:title" content="{{news.heading}}-Ulliyeri news" />
+	<meta property="og:description" content="badmas" />
+	<meta property="og:url" content="http://127.0.0.1:8000/{{category}}/{{id}}" />
+	<meta property="og:site_name" content="ULLIYERI NEWS" />
+</head>
+{% endblock %}
+{% block body %}
+<div class="topBarDetails">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 " style="margin-bottom: 15px;">
+                <div class="fill-logo-container">
+                    <div class="logo-div">
+                        <img class="img-responsive logo-details" style="max-height: 45px;"
+                             src="{% static 'static_images\ulliyeri news logo px.png' %}" alt="">
+                    </div>
+                    <div class=" fill-logo-remain">
+                        <h5>ULLIYERI NEWS</h5>
+                        <h6 class="top-txt-left"> {{date}} | {{day}}</h6>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 ">
+                <h6 class="top-txt-right d-none d-sm-block"> WWW.ULLIYERINEWS.COM </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- top bar section end -->
+
+<!-- logo section -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-sm-2 col-md-1 d-none d-sm-block">
+            <img class="img-responsive logo-home" width="100%"
+                 src="static_images\ulliyeri news logo px.png"
+                 alt="">
+        </div>
+    </div>
+</div> -->
+<!-- logo section end-->
+
+<!-- nav bar section -->
+<div class="container-fluid navBar  d-none d-sm-block ">
+    <div class="container d-none d-lg-block">
+
+        <a class="navBarItem" style="margin-left: 0;" href="/">HOME</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/local/">LOCAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/political/">POLITICAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/education/">EDUCATIONAL NEWS</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/obituary/">OBITUARY</a>
+        <label class="navBarItem">|</label>
+        <a class="navBarItem" href="/category/recipe/">FOOD RECIPES</a>
+    </div>
+</div>
+<div class="container main-container">
+    <div class="row">
+        <!-- breaking news container -->
+        <div class="col-md-8">
+            <div>
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                     aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" class="a-tag-dark ">Home</a></li>
+                        <li class="breadcrumb-item active " aria-current="page">{{category}}</li>
+                    </ol>
+                </nav>
+                <div class="line"></div>
+                <div class="  mb-5 bg-body rounded ">
+                    <div class="news-container ">
+                        <img src="{{news.image.url}}" class="d-block w-100 mb-4" alt="">
+                        <h5 class="heading">{{news.heading}} </h5>
+                        <h6 class="top-txt-left">By {{news.creator_type}} | {{news.creator_id}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="news-detail">
+                <p >{{news.short_news}}</p>
+            </div>
+            <div class="col-12 ">
+                {% for i in mainBannerAd %}
+                <a href="#" class="clickable-div">
+                    <img class="img-responsive banner-ads-image" width="100%"
+                         src="{{i.image.url}}" alt="">
+                </a>
+                {% endfor %}
+            </div>
+            <div style="height: 10px; width: 10px;">
+                <p></p>
+            </div>
+            <div class="news-detail mb-2">
+                <p >{{news.news}}</p>
+            </div>
+            <div class="mb-5">
+                <h6 class="top-txt-right">By {{news.creator_type}} | {{news.creator_id}}</h6>
+            </div>
+
+        </div>
+        <div class="col-md-4 d-none d-md-block">
+            <div>
+                <!------------------------------->
+                <!-- <h6>TRENDING NEWS</h6> -->
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item ">TRENDING NEWS</li>
+                    </ol>
+                </nav>
+                <div class="line"></div>
+                <div class="scroll-div news-container">
+                    {% for i in trendingNewsList %}
+                    <div class=" mb-3  shadow-sm bg-body rounded">
+                        <a href="/category/trending/{{i.id}}" class="clickable-div">
+                            <div class="row g-0 news-card">
+                                <div class="col-lg-6">
+                                    <img class="img-responsive" width="100%" src="{{i.image.url}}" alt="imagr">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card-body-2">
+                                        <p class="card-text"> {{i.heading|truncatechars:54}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <p></p>
+                <!-- join button -->
+                <div class=" div-button">
+                    <a class="a-tag-white" href="https://chat.Whatsapp.com/DvEDMwQNuWRJj7VV7WzBYn">Click here to
+                        join Ulliyeri News WhatsApp group </a>
+                </div>
+                <!-- trending news container end -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top:15px">
+
+        <div class="col-lg-6">
+            <h6>COMMENT YOUR VIEWS HERE</h6>
+            <div class="line" style="margin-bottom:15px"></div>
+            <div class="ratio ratio-16x9 comment-scroll">
+
+                <div id="fb-root ">
+                    <div class="fb-comments" data-order-by="reverse_time"
+                         data-href="https://ulliyerinews.com/category/{{category}}/{{id}}"
+                         data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h6>WATCH TRENDING NEWS ON YOUTUBE</h6>
+            <div class="line" style="margin-bottom:15px"></div>
+            <div class="ratio ratio-16x9">
+                <iframe width="1520" height="623" src="https://www.youtube.com/embed/1wIqPenB2J8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<!------------------------------------------------>
+<div style="height: 100px;">
+</div>
+<!------------------------------------------------>
+
+<!-- news main container end -->
+
+<div class="footer">
+    <p>© 2021 <b> ulliyerinews.com </b> ALL RIGHTS RESERVED | Powered by <span><a class="a-tag-dark" href="#">
+                    badmas dev & design</a> </span>
+    </p>
+</div>
+
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0"
+        nonce="u6dLkm1U"></script>
+{% endblock %}
