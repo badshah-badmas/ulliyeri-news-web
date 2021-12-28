@@ -42,6 +42,8 @@ SECURE_HSTS_SECONDS = 31536000
 # Application definition
 
 INSTALLED_APPS = [
+    'newsapi',
+    'rest_framework',
     'newsApp',
     'easy_thumbnails',
     'image_cropping',
