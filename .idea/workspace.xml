@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b544be48-74f4-410f-9222-495f802fb1d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/newsProject/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/autocomplete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/changelists.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/nav_sidebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/responsive_rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/fonts/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/fonts/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/calendar-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-addlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-changelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-deletelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-unknown-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-unknown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-viewlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/icon-yes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/inline-delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/selector-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/sorting-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/tooltag-add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/img/tooltag-arrowright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/SelectBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/SelectFilter2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/change_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/inlines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/jquery.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/nav_sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/popup_response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/prepopulate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/prepopulate_init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/urlify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/dsb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/hsb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/hy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/tk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/css/homePageStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/css/sampl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/fonts/NotoSansMalayalam_Condensed-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/fonts/NotoSansMalayalam_Condensed-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/fonts/NotoSansMalayalam_Condensed-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/fonts/NotoSansMalayalam_Condensed-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/fonts/NotoSansMalayalam_Condensed-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/image_cropping/css/Jcrop.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/image_cropping/css/image_cropping.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/image_cropping/css/jquery.Jcrop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/image_cropping/css/jquery.Jcrop.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/image_cropping/js/dist/image_cropping.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/image_cropping/js/src/image_cropping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/image_cropping/js/src/jquery.Jcrop.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/js/homePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/js/sampl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/static_images/1920x1080 dummy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/static_images/728x90 banner ad dummy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/static_images/ulliyeri news logo px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/assets/static_images/ulliyeri news logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/1265679-karshakan.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/1265679-karshakan_2NRVUmQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/1265695-krishnaprasad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/1265695-krishnaprasad_r9dHTwP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/4-jpg_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/advertisement/1265695-krishnaprasad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/advertisement/728x90_banner_ad_dummy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/advertisement/728x90_banner_ad_dummy_yCLvgBQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/advertisement/adDemmy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/advertisement/bannerAdDummy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/encounter_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/images/befunky-collage--10-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/images/befunky-collage--3-_710x400xt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/images/cm-silver-line-271221_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/images/pjimage---2021-05-31t162645-323-jpg_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/images/pjimage--58-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/images/pjimage--61-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/images/pjimage--62-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/media/images/befunky-collage--7-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/media/images/gettyimages-1355867968-e9b5397_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/omicron-biggest-symptom_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/pinarayi-vijayanjpg_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/pjimage--7-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/pjimage--9-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/royal-enfield-voyage-to-south-pole_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/sabarimala--2-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/shan-murder_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/sincy-anil_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/success-jwst-251221_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/time-person-of-the-year-elon-musk21-recirc_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/treasures-1-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/media/whatsapp-image-2021-12-25-at-10-12-10-pm-1-_710x400xt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/migrate/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/migrate/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/migrate/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/migrate/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/migrate/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/migrate/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/migrate/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0002_auto_20211226_0019.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0003_trendingnews.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0004_latestnews.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0005_contact_homepagebannerads.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0006_auto_20211226_0339.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0007_auto_20211226_2235.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0008_entertainmentnews.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0009_auto_20211227_2228.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0010_auto_20211227_2317.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0011_auto_20211228_0010.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0012_educationnews_localnews_politicalnews.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/0013_obituary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsApp/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsProject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsProject/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsProject/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsProject/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsProject/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/newsapi/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/css/homePageStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/css/sampl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/fonts/NotoSansMalayalam_Condensed-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/fonts/NotoSansMalayalam_Condensed-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/fonts/NotoSansMalayalam_Condensed-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/fonts/NotoSansMalayalam_Condensed-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/fonts/NotoSansMalayalam_Condensed-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/js/homePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/js/sampl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/static_images/1920x1080 dummy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/static_images/728x90 banner ad dummy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/static_images/ulliyeri news logo px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/static/static_images/ulliyeri news logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/homePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/logo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/navbar-cmn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsProject/templates/trending.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="22hhx9IIrnkmCXFMI5hTm6SV0H0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programming exp\ulliyeri news website\newsProject\newsapi" />
+      <recent name="D:\programming exp\ulliyeri news website\newsProject" />
+      <recent name="D:\programming exp\ulliyeri news website\newsProject\newsProject\etc" />
+      <recent name="D:\programming exp\ulliyeri news website\newsProject\newsProject" />
+      <recent name="D:\programming exp\ulliyeri news website\newsProject\media" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b544be48-74f4-410f-9222-495f802fb1d3" name="Changes" comment="" />
+      <created>1640295969916</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640295969916</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
