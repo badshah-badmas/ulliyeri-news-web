@@ -104,6 +104,20 @@ class PoliticalNews(models.Model):
         return str(self.pk)
 
 
+class Obituary(models.Model):
+    id = models.AutoField(primary_key=True)
+    heading = models.CharField(max_length=150)
+    short_news = models.TextField()
+    news = models.TextField()
+    image = models.ImageField(upload_to='images')
+    postDate = datetime.date.today()
+    creator_type = models.CharField(max_length=50)
+    creator_id = models.CharField(max_length=50)
+
+    def __str__(self):
+        return str(self.pk)
+
+
 class Contact(models.Model):
     groupLink = models.TextField()
     contactLink = models.TextField()

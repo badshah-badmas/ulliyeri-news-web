@@ -3,49 +3,15 @@
 
 {% block body %}
 <!-- top bar section -->
-<div class="topBar">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h6 class="top-txt-left"> {{date}} | {{day}}</h6>
-            </div>
-            <div class="col-sm-6 ">
-                <h6 class="top-txt-right d-none d-sm-block"> WWW.ULLIYERINEWS.COM </h6>
-            </div>
-        </div>
-    </div>
-</div>
+{% include "header.html" %}
 <!-- top bar section end -->
 
 <!-- logo section -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2 col-md-1 d-none d-sm-block">
-            <img class="img-responsive logo-home" width="100%"
-                 src="{% static 'static_images\ulliyeri news logo px.png' %}"
-                 alt="">
-        </div>
-    </div>
-</div>
+{% include "logo.html" %}
 <!-- logo section end-->
 
 <!-- nav bar section -->
-<div class="container-fluid navBar  d-none d-sm-block ">
-    <div class="container d-none d-lg-block">
-
-        <a class="navBarItem" href="/">HOME</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/local/">LOCAL NEWS</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/political/">POLITICAL NEWS</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/education/">EDUCATIONAL NEWS</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/obituary/">OBITUARY</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/recipe/">FOOD RECIPES</a>
-    </div>
-</div>
+{% include "navbar-cmn.html" %}
 <div class="container main-container">
     <div>
         <div class="row">
@@ -174,9 +140,5 @@
 
 <!-- news main container end -->
 
-<div class="footer">
-    <p>© 2021 <b> ulliyerinews.com </b> ALL RIGHTS RESERVED | Powered by <span><a class="a-tag-dark" href="#"> badmas dev & design</a> </span>
-    </p>
-</div>
-
+{% include "footer.html" %}
 {% endblock %}

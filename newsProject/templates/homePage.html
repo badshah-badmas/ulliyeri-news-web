@@ -1,57 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 <head>
-    <meta property="og:type" content="article" />
-	<meta property="og:title" content="-Ulliyeri news" />
-	<meta property="og:description" content="badmas" />
-	<meta property="og:url" content="http://127.0.0.1:8000/" />
-	<meta property="og:site_name" content="ULLIYERI NEWS" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="-Ulliyeri news"/>
+    <meta property="og:description" content="badmas"/>
+    <meta property="og:url" content="http://127.0.0.1:8000/"/>
+    <meta property="og:site_name" content="ULLIYERI NEWS"/>
 </head>
 {% block body %}
 <!-- top bar section -->
-<div class="topBar">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h6 class="top-txt-left"> {{date}} | {{day}}</h6>
-            </div>
-            <div class="col-sm-6 ">
-                <h6 class="top-txt-right d-none d-sm-block"> WWW.ULLIYERINEWS.COM </h6>
-            </div>
-        </div>
-    </div>
-</div>
+{% include "header.html" %}
 <!-- top bar section end -->
 
 <!-- logo section -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2 col-md-1 d-none d-sm-block">
-            <img class="img-responsive logo-home" width="100%"
-                 src="{% static 'static_images\ulliyeri news logo px.png' %}"
-                 alt="">
-        </div>
-    </div>
-</div>
+{% include "logo.html" %}
 <!-- logo section end-->
 
 <!-- nav bar section -->
-<div class="container-fluid navBar  d-none d-sm-block ">
-    <div class="container d-none d-lg-block">
-
-        <a class="navBarItem" href="/">HOME</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/local/">LOCAL NEWS</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/political">POLITICAL NEWS</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/education/">EDUCATIONAL NEWS</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/obituary/">OBITUARY</a>
-        <label class="navBarItem">|</label>
-        <a class="navBarItem" href="/category/recipe/">FOOD RECIPES</a>
-    </div>
-</div>
+{% include "navbar-cmn.html" %}
 <!-- nav bar section end-->
 
 <!-- news main container -->
@@ -122,25 +88,26 @@
                     <!------------------------------->
                     <h6>TRENDING NEWS</h6>
                     <div class="line"></div>
-                    <div class="scroll-div news-container">
-                        {% for i in trendingNewsList %}
-                        <div class=" mb-3  shadow-sm bg-body rounded">
-                            <a href="category/trending/{{i.id}}" class="clickable-div">
-                                <div class="row g-0 news-card">
-                                    <div class="col-lg-6">
-                                        <img class="img-responsive" width="100%" src="{{i.image.url}}"
-                                             alt="imagr">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="card-body-2">
-                                            <p class="card-text"> {{i.heading|truncatechars:54}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        {% endfor %}
-                    </div>
+                    {% include "trending.html" %}
+                    <!--                    <div class="scroll-div news-container">-->
+                    <!--                        {% for i in trendingNewsList %}-->
+                    <!--                        <div class=" mb-3  shadow-sm bg-body rounded">-->
+                    <!--                            <a href="category/trending/{{i.id}}" class="clickable-div">-->
+                    <!--                                <div class="row g-0 news-card">-->
+                    <!--                                    <div class="col-lg-6">-->
+                    <!--                                        <img class="img-responsive" width="100%" src="{{i.image.url}}"-->
+                    <!--                                             alt="imagr">-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="col-lg-6">-->
+                    <!--                                        <div class="card-body-2">-->
+                    <!--                                            <p class="card-text"> {{i.heading|truncatechars:54}}</p>-->
+                    <!--                                        </div>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                            </a>-->
+                    <!--                        </div>-->
+                    <!--                        {% endfor %}-->
+                    <!--                    </div>-->
                     <p></p>
                     <!-- join button -->
                     <div class=" div-button">
@@ -381,7 +348,9 @@
                             {% endfor %}
                         </div>
                         <div class="d-grid gap-2 fill-remain ">
-                            <button onclick="window.location.href='/category/entertainment/';" class="darkBtn" type="button">More Entertainment News</button>
+                            <button onclick="window.location.href='/category/entertainment/';" class="darkBtn"
+                                    type="button">More Entertainment News
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -396,10 +365,7 @@
 
 <!-- news main container end -->
 
-<div class="footer">
-    <p>© 2021 <b> ulliyerinews.com </b> ALL RIGHTS RESERVED | Powered by <span><a class="a-tag-dark" href="#"> badmas dev & design</a> </span>
-    </p>
-</div>
+{% include "footer.html" %}
 {% endblock %}
 
 

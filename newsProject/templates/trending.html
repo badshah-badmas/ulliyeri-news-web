@@ -1,0 +1,23 @@
+<div class="scroll-div news-container heading">
+                        <ul class="story-items items-border-bt">
+                            {% for i in trendingNewsList %}
+
+                            <li class="list-item">
+                                <div class="d-flex flex-wrap align-items-start">
+                                    <a href="/category/trending/{{i.id}}">
+                                        <div class="story-img story-box-img-xs">
+                                            <img src="{{i.image.url}}"
+                                                 alt=""
+                                                 class="img-fluid w-100 d-block">
+                                        </div>
+                                    </a>
+                                    <div class="list-item-right">
+                                        <a href="/category/trending/{{i.id}}">
+                                            <p class="text-14 story-title text-black">{{i.heading}}</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
