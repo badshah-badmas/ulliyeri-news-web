@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'components/base.html' %}
 {% load static %}
 <head>
     <meta property="og:type" content="article"/>
@@ -9,15 +9,15 @@
 </head>
 {% block body %}
 <!-- top bar section -->
-{% include "header.html" %}
+{% include "components/header.html" %}
 <!-- top bar section end -->
-
+{% include "components/navBarMob.html" %}
 <!-- logo section -->
-{% include "logo.html" %}
+{% include "components/logo.html" %}
 <!-- logo section end-->
 
 <!-- nav bar section -->
-{% include "navbar-cmn.html" %}
+{% include "components/navbar-cmn.html" %}
 <!-- nav bar section end-->
 
 <!-- news main container -->
@@ -25,7 +25,7 @@
     <div>
         <div class="row">
             <!-- breaking news container -->
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <div>
                     <h6>
                         BREAKING NEWS
@@ -83,12 +83,12 @@
             <!--latest news container end-->
 
             <!-- trending news container -->
-            <div class="col-md-4 d-none d-md-block">
+            <div class="col-lg-4 d-none d-lg-block">
                 <div>
                     <!------------------------------->
                     <h6>TRENDING NEWS</h6>
                     <div class="line"></div>
-                    {% include "trending.html" %}
+                    {% include "components/trending.html" %}
                     <!--                    <div class="scroll-div news-container">-->
                     <!--                        {% for i in trendingNewsList %}-->
                     <!--                        <div class=" mb-3  shadow-sm bg-body rounded">-->
@@ -138,7 +138,7 @@
                     <div class="row">
                         {% for i in latestNewsList %}
                         {% if forloop.counter < 8 %}
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                             <a href="category/latest/{{i.id}}" class="clickable-div">
                                 <div class="news-card">
                                     <img class="img-responsive" width="100%" src="{{i.image.url}}"
@@ -151,7 +151,7 @@
                         </div>
                         {% endif %}
                         {% endfor %}
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                             <a href="category/latest/{{i.id}}" class="clickable-div">
                                 <div class="news-card">
                                     <img class="img-responsive" width="100%"
@@ -365,7 +365,7 @@
 
 <!-- news main container end -->
 
-{% include "footer.html" %}
+{% include "components/footer.html" %}
 {% endblock %}
 
 

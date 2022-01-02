@@ -1,17 +1,18 @@
-{% extends 'base.html' %}
+{% extends 'components/base.html' %}
 {% load static %}
 
 {% block body %}
 <!-- top bar section -->
-{% include "header.html" %}
+{% include "components/header.html" %}
+{% include "components/navBarMob.html" %}
 <!-- top bar section end -->
 
 <!-- logo section -->
-{% include "logo.html" %}
+{% include "components/logo.html" %}
 <!-- logo section end-->
 
 <!-- nav bar section -->
-{% include "navbar-cmn.html" %}
+{% include "components/navbar-cmn.html" %}
 <div class="container main-container">
     <div>
         <div class="row">
@@ -36,7 +37,7 @@
                     <div class="row">
                         {% for i in newsList %}
                         {% if forloop.counter < 9 %}
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                             <a href="/category/{{category | lower}}/{{i.id}}" class="clickable-div">
                                 <div class="news-card">
                                     <img class="img-responsive" width="100%" src="{{i.image.url}}"
@@ -77,7 +78,7 @@
                     <div class="row">
                         {% for i in newsList %}
                         {% if forloop.counter > 8 %}
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                             <a href="/category/{{category | lower}}/{{i.id}}" class="clickable-div">
                                 <div class="news-card">
                                     <img class="img-responsive" width="100%" src="{{i.image.url}}"
@@ -140,5 +141,5 @@
 
 <!-- news main container end -->
 
-{% include "footer.html" %}
+{% include "components/footer.html" %}
 {% endblock %}

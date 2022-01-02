@@ -1,6 +1,6 @@
 from datetime import datetime
 from .models import BreakingNews, TrendingNews, LatestNews, EducationNews, LocalNews, PoliticalNews, HomePageBannerAds, \
-    Contact, EntertainmentNews
+    Contact, EntertainmentNews, Recipe, Obituary
 from django.shortcuts import render
 
 
@@ -9,7 +9,7 @@ from django.shortcuts import render
 def page_not_found_view(request, exception):
     date = datetime.now().date()
     day = datetime.now().strftime("%A").upper()
-    return render(request, '404.html', {'date': date, 'day': day}, status=404)
+    return render(request, 'pages/404.html', {'date': date, 'day': day}, status=404)
 
 
 def home(request):
@@ -18,12 +18,13 @@ def home(request):
     breaking_news_list = BreakingNews.objects.all()
     trending_news_list = TrendingNews.objects.all()
     latest_news_list = LatestNews.objects.all()
-    entertaiment_news_list = EntertainmentNews.objects.all()
+    entertainment_news_list = EntertainmentNews.objects.all()
+    recipe_list = Recipe.objects.all()
     main_banner_ad = HomePageBannerAds.objects.all()
-    cotext = {'date': date, 'day': day, 'breakingNewsList': breaking_news_list, 'trendingNewsList': trending_news_list,
-              'latestNewsList': latest_news_list, 'mainBannerAd': main_banner_ad,
-              'entertainmentNewsList': entertaiment_news_list}
-    return render(request, 'homePage.html', cotext)
+    context = {'date': date, 'day': day, 'breakingNewsList': breaking_news_list, 'trendingNewsList': trending_news_list,
+               'latestNewsList': latest_news_list, 'mainBannerAd': main_banner_ad,
+               'entertainmentNewsList': entertainment_news_list, 'recipeList': recipe_list}
+    return render(request, 'pages/homePage.html', context)
 
 
 def category(request, category_name):
@@ -54,9 +55,17 @@ def category(request, category_name):
         local_news_list = LocalNews.objects.all()
         category_context = {'category': "LOCAL", 'date': date, 'day': day, 'newsList': local_news_list,
                             'mainBannerAd': main_banner_ad}
+    elif category_name == 'recipes':
+        recipe_list = Recipe.objects.all()
+        category_context = {'category': "RECIPES", 'date': date, 'day': day, 'newsList': recipe_list,
+                            'mainBannerAd': main_banner_ad}
+    elif category_name == 'obituary':
+        obituary_list = Obituary.objects.all()
+        category_context = {'category': "OBITUARY", 'date': date, 'day': day, 'newsList': obituary_list,
+                            'mainBannerAd': main_banner_ad}
     else:
-        return render(request, '404.html', {'date': date, 'day': day})
-    return render(request, 'category.html', category_context)
+        return render(request, 'pages/404.html', {'date': date, 'day': day})
+    return render(request, 'pages/category.html', category_context)
 
 
 def details(request, category_name, news_id):
@@ -72,6 +81,15 @@ def details(request, category_name, news_id):
         news = TrendingNews.objects.get(id=news_id)
     if category_name == "entertainment":
         news = EntertainmentNews.objects.get(id=news_id)
+    if category_name == 'education':
+        news = EducationNews.objects.get(id=news_id)
+    if category_name == 'political':
+        news = PoliticalNews.objects.get(id=news_id)
+    if category_name == 'local':
+        news = LocalNews.objects.get(id=news_id)
+    if category_name == 'recipes':
+        news = Recipe.objects.get(id=news_id)
+
     context = {'id': news_id, 'category': category_name, 'date': date, 'day': day, 'news': news,
                'trendingNewsList': trending_news_list, 'mainBannerAd': main_banner_ad}
-    return render(request, 'details.html', context)
+    return render(request, 'pages/details.html', context)

@@ -118,6 +118,20 @@ class Obituary(models.Model):
         return str(self.pk)
 
 
+class Recipe(models.Model):
+    id = models.AutoField(primary_key=True)
+    heading = models.CharField(max_length=150)
+    ingredients = models.TextField()
+    recipe = models.TextField()
+    image = models.ImageField(upload_to='images')
+    postDate = datetime.date.today()
+    recipe_by = models.CharField(max_length=50)
+    creator_id = models.CharField(max_length=50)
+
+    def __str__(self):
+        return str(self.pk)
+
+
 class Contact(models.Model):
     groupLink = models.TextField()
     contactLink = models.TextField()

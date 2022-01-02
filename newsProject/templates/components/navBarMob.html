@@ -1,0 +1,38 @@
+{% load static %}
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">ULLIYERI NEWS</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="list-group">
+            <a class="list-group-item " href="/">HOME</a>
+            <a class="list-group-item list-group-item-action" href="/category/local/" role="tab">LOCAL NEWS</a>
+            <a class="list-group-item list-group-item-action" href="/category/political" role="tab">POLITICAL
+                NEWS</a>
+            <a class="list-group-item list-group-item-action" href="/category/education/" role="tab">EDUCATIONAL
+                NEWS</a>
+            <a class="list-group-item list-group-item-action" href="/category/local/" role="tab">OBITUARY</a>
+            <a class="list-group-item list-group-item-action" href="/category/local/" role="tab">FOOD RECIPES</a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-md-block d-lg-none" style="">
+    <div class="container-fluid">
+        <div class="fill-logo-container">
+            <div class="logo-div" style="margin-left:10px;">
+                <img class="img-responsive logo-details" style="max-height: 45px;"
+                     src="{% static 'static_images\ulliyeri news logo px.png' %}" alt="">
+            </div>
+            <div class=" fill-logo-remain">
+                <h5>ULLIYERI NEWS</h5>
+                <h6 class="top-txt-left"> {{date}} | {{day}}</h6>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
